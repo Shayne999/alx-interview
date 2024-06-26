@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+
+""" Returns pascals triangle"""
+
 def pascal_triangle(n):
     p_triangle = []
 
