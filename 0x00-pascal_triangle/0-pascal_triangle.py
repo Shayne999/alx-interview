@@ -3,16 +3,21 @@
 """ Returns pascals triangle"""
 
 def pascal_triangle(n):
-    """Create a function def pascal_triangle(n): that returns a list of lists
-    of integers representing the Pascal’s triangle of n
-    """
-    res = []
+    p_triangle = []
+
     if n > 0:
+        #creates triangle rows
         for i in range(1, n + 1):
-            level = []
+            row = []
+            #frist element of a row
             C = 1
+
+            #calculates each element in the current row
             for j in range(1, i + 1):
-                level.append(C)
+                row.append(C)
+
+                #updates c to the next binomial coefficient
                 C = C * (i - j) // j
-            res.append(level)
-    return res
+
+            p_triangle.append(row)
+    return p_triangle
