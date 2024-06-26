@@ -3,21 +3,23 @@
 """ Returns pascals triangle"""
 
 def pascal_triangle(n):
+    # prints out pascals triangle
+
+    # returns an empty list if n <= 0
+    if n <= 0:
+        return []
+    
     p_triangle = []
 
-    if n > 0:
-        #creates triangle rows
-        for i in range(1, n + 1):
-            row = []
-            #frist element of a row
-            m = 1
+    # creates triangle rows, each one starting with 1
+    for row_count in range(n):
+        row = [1] * (row_count + 1)
 
-            #calculates each element in the current row
-            for j in range(1, i + 1):
-                row.append(m)
+        # fills in each row's values based on the previous row
+        for j in range(1, row_count):
+            row[j] = p_triangle[row_count - 1][j - 1] + p_triangle[row_count - 1][j]
 
-                #updates c to the next binomial coefficient
-                m = m * (i - j) // j
+        #append rows to the triangle
+        p_triangle.append(row)
 
-            p_triangle.append(row)
     return p_triangle
