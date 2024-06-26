@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
-""" Returns pascals triangle """
+""" Returns pascals' triangle """
 
 def pascal_triangle(n):
-    
+    """Create a function pascal_triangle that takes in a parameter n. It returns a list of lists
+    of integers representing the Pascals' triangle
+    """
     res = []
     if n > 0:
         for i in range(1, n + 1):
