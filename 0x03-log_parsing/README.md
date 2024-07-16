@@ -1,0 +1,1 @@
+This directory contains a python file taht attempts to Write a script that reads stdin line by line and computes metrics.
