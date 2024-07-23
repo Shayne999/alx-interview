@@ -1,0 +1,1 @@
+This directory contains a python file. The file contains a method that attempts to determines if a given data set represents a valid UTF-8 encoding.
