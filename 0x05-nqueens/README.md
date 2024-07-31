@@ -1,0 +1,1 @@
+This directory contains a python file that attempts to solve the n queens problem.
