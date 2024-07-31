@@ -17,7 +17,7 @@ def is_safe(board, row, col, N):
             return False
 
     """Check lower diagonal on left side"""
-    for i, j in zip(range(row, N, 1), range(col, -1, -1)):
+    for i, j in zip(range(row, -1, -1), range(col, N)):
         if board[i][j] == 1:
             return False
 
@@ -31,7 +31,7 @@ def solve_n_queens_util(board, row, N, solutions):
         for i in range(N):
             for j in range(N):
                 if board[i][j] == 1:
-                    solution.append(j)
+                    solution.append([i, j])
         solutions.append(solution)
         return
 
