@@ -58,3 +58,16 @@ def solve_n_queens(N):
 
     for solution in solutions:
         print(solution)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: nqueens N")
+        sys.exit(1)
+
+    try:
+        N = int(sys.argv[1])
+        solve_n_queens(N)
+    except ValueError:
+        print("N must be a number")
+        sys.exit(1)
