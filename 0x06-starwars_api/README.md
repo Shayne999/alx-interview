@@ -1,0 +1,1 @@
+This directory contains a javascript file that attempts to  prints all characters of a Star Wars movie usinng the Star wars API.
