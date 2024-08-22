@@ -1,0 +1,1 @@
+This directory contains a file that attempts to solve the coin change problem.
