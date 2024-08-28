@@ -1,0 +1,1 @@
+This directory contains a python script that attempts to returns the perimeter of the island described in grid.
